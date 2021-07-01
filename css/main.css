@@ -1,8 +1,6 @@
+@import "common.css";
 .container {
-  max-width: 1000px;
-  margin: auto;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #fbf9f4;
 }
 
 .blog-header {
@@ -28,6 +26,14 @@ a {
   letter-spacing: 2px;
 }
 
+.main-text {
+  margin-bottom: 25px;
+  font-family: bodoni, serif;
+  font-size: 35px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
 .main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -35,14 +41,6 @@ a {
   grid-template-areas: "content content content content sidebar";
   margin-top: 20px;
   /* min-height: 100vh; */
-}
-
-.main-text {
-  margin-bottom: 25px;
-  font-family: bodoni, serif;
-  font-size: 35px;
-  font-weight: 400;
-  letter-spacing: 0.03em;
 }
 
 .content {

@@ -1,13 +1,11 @@
+@import "common.css";
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: bodoni, serif;
-  background-color: #fbf9f4;
-  margin: auto;
   text-align: justify;
-  max-width: 1000px;
 }
 
 .header {
@@ -31,11 +29,32 @@
   max-width: 80%;
 }
 
-@media (max-width: 425px) {
+.image1 {
+  width: 35%;
+  height: 300px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.social-media {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
   .container {
     margin: auto;
   }
   .image {
+    width: 65%;
+    height: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .image1 {
     width: 65%;
     height: 50%;
     padding-top: 10px;
