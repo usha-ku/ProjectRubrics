@@ -1,0 +1,82 @@
+.blog-header {
+    font-size: 2.7em;
+    letter-spacing: 0.08em;
+    padding-top: 50px;
+    padding-bottom: 35px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    border-bottom: 1px solid red;
+    color: black;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.4em;
+    letter-spacing: 2px;
+}
+
+.main-text {
+    margin-bottom: 25px;
+    font-size: 2em;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+}
+
+.content {
+    grid-area: content;
+    justify-content: center;
+}
+
+.author-description {
+    margin-top: 20px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.most-popular {
+    margin-top: 60px;
+    border-top: 1px solid red;
+    padding-top: 20px;
+}
+
+.subscribe-cta {
+    margin-top: 60px;
+    border-top: 1px solid red;
+    padding-top: 20px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    grid-area: footer;
+    /* margin-top: 10px; */
+}
+
+@media (max-width: 768px) {
+    .main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-rows: auto;
+        grid-template-areas: "content" "sidebar" "footer";
+        margin-top: 20px;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .blog-header {
+        font-size: 1.5em;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+}
